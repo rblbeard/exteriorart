@@ -1378,3 +1378,46 @@ textarea.form-input {
 		flex-direction: row;
 	}
 }
+
+/* ── Video library: series groupings ─────────────────────────── */
+.video-series {
+	margin-bottom: 3.5rem;
+}
+
+.video-series:last-of-type {
+	margin-bottom: 0;
+}
+
+.video-series-heading {
+	font-size: 1.35rem;
+	line-height: 1.3;
+	margin: 0 0 0.5rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid var(--border-dark);
+}
+
+.video-series-sub {
+	color: var(--text-secondary);
+	max-width: 62ch;
+	margin: 0 0 1.75rem;
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.video-library-cta {
+	text-align: center;
+	margin-top: 3.5rem;
+	padding-top: 2.5rem;
+	border-top: 1px solid var(--border-dark);
+}
+
+.video-library-cta p {
+	color: var(--text-secondary);
+	margin: 0 0 1.25rem;
+}
+
+@media (min-width: 1024px) {
+	.video-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
