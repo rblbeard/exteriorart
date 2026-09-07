@@ -116,6 +116,38 @@
 		]
 	}
 	</script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-849963199"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-849963199');
+	</script>
+	<script>
+		/* Conversion tracking - phone, email and document downloads.
+		   Delegated so it covers every matching link on the page, now and later. */
+		(function () {
+			var LABELS = {
+				phone: 'AW-849963199/JN3iCNDOxPAcEL_RpZUD',
+				email: 'AW-849963199/mD6GCNPOxPAcEL_RpZUD',
+				doc:   'AW-849963199/71kSCNbOxPAcEL_RpZUD'
+			};
+			function fire(label) {
+				if (typeof gtag !== 'function') return;
+				gtag('event', 'conversion', { send_to: label });
+			}
+			document.addEventListener('click', function (e) {
+				var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+				if (!a) return;
+				var href = a.getAttribute('href') || '';
+				if (href.indexOf('tel:') === 0) fire(LABELS.phone);
+				else if (href.indexOf('mailto:') === 0) fire(LABELS.email);
+				else if (/\.pdf($|\?|#)/i.test(href)) fire(LABELS.doc);
+			}, true);
+		})();
+	</script>
 </head>
 <body>
 	
