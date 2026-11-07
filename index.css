@@ -1421,3 +1421,9 @@ textarea.form-input {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
+/* --- AI-readiness pass 2026-11-07: tag changes keep the same look --- */
+.hero-graphic-card-title .hero-card-name { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; line-height: 1.25; color: var(--text-primary); }
+.consulting-feat-text h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
+.footer-pages { margin-top: 1.25rem; }
+.footer-pages .footer-nav { flex-wrap: wrap; }
